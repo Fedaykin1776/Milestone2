@@ -5,14 +5,6 @@ import pandas as pd
 
 app = Flask(__name__)
 
-@app.route('/index', methods=['POST', 'GET'])
-def index():
-  if request.method == 'GET':
-    return render_template('index.html')
-  if request.method == 'POST':
-    print("Hellos")
-    print(request.form)
-    return render_template('about.html')
 
 @app.route('/', methods=['GET', 'POST'])
 def no_route():
