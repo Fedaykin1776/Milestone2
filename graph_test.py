@@ -12,11 +12,9 @@ df['date'] = list(data.keys())
 #df['date'] = pd.to_datetime(df['date'], format=date_format)
 df['price']=price
 # prepare some data
-#x = df['date']
-#y = df['price']
+x = df['date']
+y = df['price']
 
-x= [1,2,3]
-y= [1,2,3]
 
 # create a new plot with a title and axis labels
 p = figure(title="Simple line example", x_axis_label='x', y_axis_label='y')
