@@ -9,7 +9,7 @@ data = data['Time Series (Daily)']
 price = [data[x]['1. open'] for x in list(data.keys())]
 df = pd.DataFrame()
 df['date'] = list(data.keys())
-df['date'] = pd.to_datetime(df['date'], format=date_format)
+df['date'] = pd.to_datetime(df['date'])
 df['price']=price
 # prepare some data
 x = df['date']
